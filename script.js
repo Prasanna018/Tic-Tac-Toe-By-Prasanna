@@ -8,11 +8,8 @@ let body = document.querySelector("body");
 let btntheme = document.querySelector("#btn");
 
 
-
-
-
 let currentPlayer = "X";
-let arr = Array(9).fill(null);
+let arr = Array(9).fill(null); // first fill the array to null 
 
 
 
@@ -35,7 +32,6 @@ function checkWinner() {
         return;
 
 
-
     }
 
     if (!arr.some((el) => el === null)) {
@@ -44,11 +40,7 @@ function checkWinner() {
     }
 }
 
-
-
-
-
-
+// function to check winner at every step //
 function handleClick(el) {
 
     const id = Number(el.id);
